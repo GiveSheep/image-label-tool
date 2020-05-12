@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Example</title>
+    <script src="./legacy_lib/fabric.js"  charset="UTF-8"></script>
+</head>
+<body>
+    <section>
+        <div class="form-panel">
+            <button id="btn-create-point-label">画4点标注</button>
+            <button id="btn-select-point-label">选择4点标注</button>
+            <button id="btn-delete-point-label">删除4点标注</button>
+            <button id="btn-clear-point-label">清除4点标注</button>
+        </div>
+
+        <div class="form-panel">
+            <button id="btn-h-label">画横向标注</button>
+            <button id="btn-create-h-label">生成横向标注</button>
+            <button id="btn-create-v-label">生成纵向标注</button>
+        </div>
+
+        <div class="form-panel">
+            <button id="btn-draw-coord">画坐标轴</button>
+            <button id="btn-edit-coord">移动坐标轴</button>
+        </div>
+
+        <div class="form-panel">
+            <button id="btn-draw-image">画设计区域(LOGO)</button>
+            <button id="btn-draw-text">画设计区域(文字)</button>
+            <button id="btn-draw-3d-image">画可三维旋转的设计区域(LOGO)</button>
+        </div>
+
+        <div class="form-panel">
+            <input id="input-font-size" placeholder="输入字号"/>
+            <input id="input-font-family" placeholder="输入字体"/>
+            <input id="input-font-color" placeholder="输入颜色"/>
+            <button id="btn-set-font">设置字体</button>
+            <button id="btn-set-bold">B</button>
+            <button id="btn-set-italic">I</button>
+            <button id="btn-set-normal">N</button>
+            <span id="current-text"></span>
+            <!--<button id="btn-select-point-area">选择四点标注</button>-->
+        </div>
+
+        <div class="form-panel">
+            <button id="btn-draw-point-area">画四点标注</button>
+            <!--<button id="btn-select-point-area">选择四点标注</button>-->
+            <button id="btn-to-data-url">toDataUrl</button>
+        </div>
+
+        <hr>
+
+        <!--<div class="form-panel">-->
+            <!--<button id="btn-listen">侦听事件</button>-->
+            <!--<button id="btn-notlisten">不侦听事件</button>-->
+        <!--</div>-->
+    </section>
+
+    <div id="drawing-area" style="position:relative">
+        <div style="position:absolute;width:600px;left:0" id="image-label-area"></div>
+        <pre style="position:absolute;width:600px;right:0;transition:0.5s background-color;background-color:white" id="json-container"><code id="json"></code></pre>
+    </div>
+
+
+
+</body>
+<script src="./dist/graph-label-tool.js"  charset="UTF-8"></script>
+<script src="./test/index.js"  charset="UTF-8"></script>
+<script charset="UTF-8">
+
+</script>
+<style>
+
+</style>
+</html>
